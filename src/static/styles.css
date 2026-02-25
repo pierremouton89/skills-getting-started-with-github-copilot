@@ -63,6 +63,40 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.07);
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #eef3fb;
+  border-radius: 4px;
+  border: 1px solid #c5cae9;
+}
+
+.participants-section strong {
+  color: #3949ab;
+  font-size: 15px;
+}
+
+.participants-list {
+  margin: 8px 0 0 18px;
+  padding-left: 0;
+  list-style-type: disc;
+  color: #333;
+  font-size: 15px;
+}
+
+.participants-section.empty {
+  background: #fffde7;
+  border: 1px dashed #ffe082;
+}
+
+.no-participants {
+  color: #bdbdbd;
+  font-style: italic;
+  margin-left: 6px;
+  font-size: 14px;
 }
 
 .activity-card h4 {
@@ -141,4 +175,54 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #eef3fb;
+  border-radius: 4px;
+  border: 1px solid #c5cae9;
+}
+
+.participants-section strong {
+  color: #3949ab;
+  font-size: 15px;
+}
+
+.participants-list {
+  margin: 8px 0 0 18px;
+  padding-left: 0;
+  list-style-type: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.participants-section.empty {
+  background: #fffde7;
+  border: 1px dashed #ffe082;
+}
+
+.no-participants {
+  color: #bdbdbd;
+  font-style: italic;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.delete-participant:hover {
+  color: #b71c1c;
+}
+
+.delete-participant::before {
+  content: '🗑️';
+  font-size: 14px;
 }
